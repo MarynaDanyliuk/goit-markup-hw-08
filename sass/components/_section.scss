@@ -1,0 +1,39 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__team {
+    background-color: var(--team-bg-color);
+  }
+
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
+
+// .section,
+// .section.team,
+// .section.portfolio {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+// .no-padding {
+//   padding-top: 0;
+//   padding-bottom: 94px;
+// }
+
+// .section-title {
+//   margin-top: 0;
+//   margin-bottom: 50px;
+//   color: var(--title-txt-color);
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.16;
+//   text-align: center;
+// }
+
+// .section.team {
+//   background-color: var(--team-bg-color);
+// }

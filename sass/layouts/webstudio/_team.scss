@@ -1,0 +1,106 @@
+.team {
+  display: flex;
+
+  &__card {
+    background-color: var(--team-card-bg-color);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__info {
+    padding: 30px 32px;
+  }
+
+  &__title {
+    color: var(--title-txt-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__description {
+    color: var(--primary-txt-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+// .team-list .title {
+//   color: var(--title-txt-color);
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.19;
+//   text-align: center;
+// }
+
+// .team-list .description {
+//   color: var(--primary-txt-color);
+//   font-size: 16px;
+//   line-height: 1.19;
+//   text-align: center;
+//   margin-top: 10px;
+// }
+
+// .team-card {
+//   background-color: var(--team-card-bg-color);
+//   width: 270px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+// }
+
+// .social-net {
+//   display: flex;
+//   justify-content: center;
+//   gap: 10px;
+//   margin-top: 10px;
+// }
+
+// .social-net-item {
+//   height: 44px;
+//   width: 44px;
+// }
+
+// .social-net-link {
+//   display: flex;
+//   height: 100%;
+//   width: 100%;
+//   border-radius: 50%;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: transparent;
+
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .social-net-link:hover,
+// .social-net-link:focus {
+//   background-color: var(--button-bg-color);
+// }
+
+// .social-net-link:hover .social-icon,
+// .social-net-link:focus .social-icon {
+//   fill: var(--address-txt);
+// }
+
+// .social-icon {
+//   display: block;
+//   height: 20px;
+//   width: 20px;
+//   fill: var(--icon-color);
+
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .team-info {
+//   padding: 30px 32px;
+// }
