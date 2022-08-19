@@ -238,7 +238,6 @@ body {
   padding: 10px 32px;
   min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button--primary:hover, .button--primary:focus {
@@ -336,8 +335,13 @@ body {
 .hero {
   background-color: var(--accent-bg-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__overlay {
   max-width: 1600px;
@@ -353,10 +357,17 @@ body {
   margin-bottom: 30px;
   color: var(--hero-txt-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefit-list {
