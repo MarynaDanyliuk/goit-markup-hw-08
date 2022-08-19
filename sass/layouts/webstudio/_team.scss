@@ -37,16 +37,30 @@
     margin-top: 10px;
   }
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__card {
+      width: 354px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     flex-direction: row;
 
     &__card {
       width: 270px;
-      background-color: var(--team-card-bg-color);
-      width: 270px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
 
       margin-bottom: 0;
 

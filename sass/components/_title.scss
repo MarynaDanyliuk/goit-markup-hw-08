@@ -3,8 +3,8 @@
   margin-bottom: 30px;
   color: var(--title-txt-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 
   &--visually-hidden {
@@ -20,7 +20,9 @@
     overflow: hidden;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }

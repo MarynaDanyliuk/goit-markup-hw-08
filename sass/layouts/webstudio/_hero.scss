@@ -1,7 +1,8 @@
 .hero {
   background-color: var(--accent-bg-color);
   text-align: center;
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @media screen and (min-width: $desktop) {
     padding-top: 200px;
