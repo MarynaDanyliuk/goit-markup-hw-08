@@ -134,6 +134,7 @@
     width: 358px;
 
     @media screen and (min-width: $desktop) {
+      display: inline;
       width: 570px;
       margin-left: 93px;
     }

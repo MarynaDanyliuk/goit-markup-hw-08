@@ -736,6 +736,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__mailing {
+    display: inline;
     width: 570px;
     margin-left: 93px;
   }
