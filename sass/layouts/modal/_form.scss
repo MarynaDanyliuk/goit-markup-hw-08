@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 448px;
+  width: 370px;
 
   &__field {
     position: relative;
@@ -73,7 +73,7 @@
 
   &__comment-area {
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
 
     font-family: inherit;
@@ -97,6 +97,10 @@
       cursor: pointer;
       border: 1px solid var(--button-bg-color);
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 448px;
   }
 }
 

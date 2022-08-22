@@ -54,10 +54,6 @@
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
-
-    &:last-child {
-      background-color: aqua;
-    }
   }
 
   &__title {
@@ -91,8 +87,8 @@
       margin-bottom: 0;
     }
 
-    &__info {
-      background-color: aqua;
+    &:first-child &__info {
+      padding: 20px 24px 56px 20px;
     }
   }
 

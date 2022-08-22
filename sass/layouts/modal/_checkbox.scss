@@ -19,8 +19,9 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 430px;
-    line-height: 1.71;
+    width: 370px;
+    font-size: 12px;
+    line-height: 1.16;
     cursor: pointer;
   }
 
@@ -52,6 +53,14 @@
     display: inline-block;
     color: var(--accent-txt-color);
     text-decoration: underline;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__label {
+      width: 425px;
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
 
