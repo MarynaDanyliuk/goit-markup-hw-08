@@ -1,6 +1,6 @@
 .portfolio-card {
   background-color: var(--portfolio-card-bg-color);
-  width: 450px;
+  width: calc(100% - 30px);
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
@@ -88,7 +88,7 @@
     }
 
     &:first-child &__info {
-      padding: 20px 24px 56px 20px;
+      padding: 20px 24px 56px 24px;
     }
   }
 
@@ -106,6 +106,10 @@
 
     &:nth-last-child(-n + 3) {
       margin-bottom: 0;
+    }
+
+    &:first-child &__info {
+      padding: 20px 24px;
     }
   }
 }

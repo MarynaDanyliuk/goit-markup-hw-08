@@ -4,13 +4,13 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  // background-color: aquamarine;
+  background-color: aquamarine;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 768px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    width: 1200px;
   }
 }

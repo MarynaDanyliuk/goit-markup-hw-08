@@ -7,6 +7,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -85,16 +86,23 @@ body {
   }
 }
 
-.navigation__list {
-  display: flex;
-  margin-left: 93px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 @media screen and (max-width: 767px) {
   .navigation__list {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    margin-left: 93px;
   }
 }
 
@@ -131,17 +139,33 @@ body {
   margin-right: 50px;
 }
 
-.contacts-list {
-  display: flex;
-  margin-left: auto;
-}
 @media screen and (max-width: 767px) {
   .contacts-list {
     display: none;
   }
 }
-.contacts-list__item + .contacts-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: flex;
+    display: block;
+    flex-direction: column;
+  }
+  .contacts-list__item {
+    margin-bottom: 10px;
+  }
+  .contacts-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+  .contacts-list__item + .contacts-list__item {
+    margin-left: 30px;
+  }
 }
 .contacts-list__link {
   display: inline-block;
@@ -163,10 +187,6 @@ body {
   fill: currentColor;
 }
 
-/* .icon-nav:hover,
-.icon-nav:focus {
-  fill: var(--accent-txt-color);
-} */
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -201,6 +221,7 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: aquamarine;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -354,10 +375,12 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     padding: 0;
+    align-items: center;
   }
 }
 
@@ -540,7 +563,7 @@ body {
   flex-direction: column;
 }
 .benefit-list__item {
-  width: 450px;
+  width: calc(100% - 30px);
 }
 .benefit-list__item:not(:last-child) {
   margin-bottom: 30px;
@@ -581,7 +604,7 @@ body {
     flex-wrap: wrap;
   }
   .benefit-list__item {
-    width: 354px;
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -597,7 +620,7 @@ body {
     flex-direction: row;
   }
   .benefit-list__item {
-    width: 270px;
+    width: calc((100% - 120px) / 4);
   }
   .benefit-list__item:nth-child(n) {
     margin-right: 30px;
@@ -646,7 +669,7 @@ body {
   flex-direction: column;
 }
 .team__card {
-  width: 450px;
+  width: calc(100% - 30px);
   background-color: var(--team-card-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -678,7 +701,7 @@ body {
     flex-wrap: wrap;
   }
   .team__card {
-    width: 354px;
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -694,7 +717,7 @@ body {
     flex-direction: row;
   }
   .team__card {
-    width: 270px;
+    width: calc((100% - 120px) / 4);
     margin-bottom: 0;
   }
   .team__card:not(:last-child) {
@@ -786,6 +809,12 @@ body {
 .footer__container {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -984,7 +1013,7 @@ body {
 
 .portfolio-card {
   background-color: var(--portfolio-card-bg-color);
-  width: 450px;
+  width: calc(100% - 30px);
   margin-bottom: 30px;
 }
 .portfolio-card:last-child {
@@ -1057,7 +1086,7 @@ body {
     margin-bottom: 0;
   }
   .portfolio-card:first-child .portfolio-card__info {
-    padding: 20px 24px 56px 20px;
+    padding: 20px 24px 56px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1073,6 +1102,9 @@ body {
   }
   .portfolio-card:nth-last-child(-n+3) {
     margin-bottom: 0;
+  }
+  .portfolio-card:first-child .portfolio-card__info {
+    padding: 20px 24px;
   }
 }
 
