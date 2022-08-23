@@ -57,8 +57,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    flex-direction: row;
-
     &__card {
       width: calc((100% - 120px) / 4);
 

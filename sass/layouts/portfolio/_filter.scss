@@ -8,9 +8,6 @@
       margin-bottom: 15px;
       margin-right: 8px;
     }
-    // &:last-child &__item {
-    //   margin-right: 0;
-    // }
   }
 
   @media screen and (min-width: $tablet) {
@@ -27,16 +24,6 @@
     }
   }
   @media screen and (min-width: $desktop) {
-    flex-wrap: nowrap;
     margin-bottom: 50px;
-    justify-content: center;
-
-    &__item {
-      margin-bottom: 0;
-    }
-
-    & &__item + &__item {
-      margin-left: 8px;
-    }
   }
 }

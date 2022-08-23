@@ -5,7 +5,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     display: block;
     flex-direction: column;
@@ -20,7 +20,6 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    flex-direction: row;
     margin-left: auto;
 
     &__item + &__item {

@@ -61,11 +61,13 @@
         margin-bottom: 0;
       }
     }
+
+    &__title {
+      text-align: left;
+    }
   }
 
   @media screen and (min-width: $desktop) {
-    flex-direction: row;
-
     &__item {
       width: calc((100% - 120px) / 4);
 
@@ -77,58 +79,5 @@
         margin-right: 0;
       }
     }
-
-    &__title {
-      text-align: left;
-    }
   }
 }
-
-// // .benefit-list,
-// .projects-list,
-// .team-list {
-//   display: flex;
-// }
-
-// .benefit-item {
-//   width: 270px;
-// }
-
-// .benefit-item-icon {
-//   display: flex;
-//   width: 270px;
-//   height: 120px;
-//   border-radius: 4px;
-//   background-color: var(--button-filter-bg-color);
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom: 30px;
-// }
-
-// .benefit-icon {
-//   display: block;
-//   width: 70px;
-//   height: 70px;
-// }
-
-// .benefit-item:not(:last-child),
-// .projects-item:not(:last-child),
-// .team-card:not(:last-child) {
-//   margin-right: 30px;
-// }
-
-// .benefit-list .title {
-//   color: var(--title-txt-color);
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   text-transform: uppercase;
-//   margin-top: 0;
-//   margin-bottom: 10px;
-// }
-
-// .benefit-list .description {
-//   margin-top: 0;
-//   color: var(--primary-txt-color);
-//   line-height: 1.71;
-// }
