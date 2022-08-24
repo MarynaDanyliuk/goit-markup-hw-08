@@ -40,6 +40,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+body.is-open {
+  overflow: hidden;
+}
 
 :root {
   --logo-black-txt: #000000;
@@ -383,16 +386,8 @@ body {
   outline: none;
 }
 
-.menu-toggle .icon-menu {
-  display: none;
-}
-
 .menu-toggle.is-open .icon-menu {
   display: block;
-}
-
-.menu-toggle.is-open .icon-close {
-  display: none;
 }
 
 @media (min-width: 767px) {
