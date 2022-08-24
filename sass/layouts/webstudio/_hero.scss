@@ -30,7 +30,12 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url(../img/index_sq_jpg/Hero/Hero_2x_480.jpg);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../img/index_sq_jpg/Hero/Hero_2x_480.jpg);
       }
     }
 
@@ -55,7 +60,12 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         & {
-          background-image: url(../img/index_sq_jpg/Hero/Hero_2x_768.jpg);
+          background-image: linear-gradient(
+              to right,
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/index_sq_jpg/Hero/Hero_2x_768.jpg);
         }
       }
     }
@@ -81,19 +91,16 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         & {
-          background-image: url(../img/index_sq_jpg/Hero/Hero_2x_1200.jpg);
+          background-image: linear-gradient(
+              to right,
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/index_sq_jpg/Hero/Hero_2x_1200.jpg);
         }
       }
     }
   }
-
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   &__overlay {
-  //     background-image: url(../img/index_sq_jpg/Hero/Hero_2x_1200.jpg);
-  //   }
-  // }
 
   &__title {
     margin-top: 0;
