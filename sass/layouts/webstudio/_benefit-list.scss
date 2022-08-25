@@ -5,11 +5,17 @@
 
   &__item {
     width: calc(100% - 30px);
+
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 
   &__canvas {
     display: flex;

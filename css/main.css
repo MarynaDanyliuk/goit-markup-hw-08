@@ -614,9 +614,10 @@ body.is-open {
 }
 .benefit-list__item {
   width: calc(100% - 30px);
-}
-.benefit-list__item:not(:last-child) {
   margin-bottom: 30px;
+}
+.benefit-list__item:last-child {
+  margin-bottom: 0;
 }
 .benefit-list__canvas {
   display: flex;
@@ -741,14 +742,6 @@ body.is-open {
   line-height: 1.19;
   text-align: center;
   margin-top: 10px;
-}
-@media screen and (max-width: 767px) {
-  .team__thumb-mob {
-    display: block;
-  }
-  .team__thumb-tab, .team__thumb-desk {
-    display: none;
-  }
 }
 @media screen and (min-width: 768px) {
   .team {
@@ -1051,6 +1044,7 @@ body.is-open {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .portfolio-card {
