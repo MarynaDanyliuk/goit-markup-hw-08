@@ -219,7 +219,6 @@ body.is-open {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: aquamarine;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -412,7 +411,6 @@ body.is-open {
 }
 
 .menu-container {
-  background-color: aqua;
   position: fixed;
   top: 0;
   left: 0;
