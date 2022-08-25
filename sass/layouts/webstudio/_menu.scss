@@ -48,6 +48,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  margin: 0 auto;
   padding: 48px 40px;
   background-color: var(--primary-bg-color);
   z-index: 999;
@@ -67,9 +68,15 @@
   color: var(--title-text-color);
 }
 
+.menu-frame {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .mobile-menu {
   padding: 0;
-  // margin-bottom: 302px;
 
   &__item {
     margin-bottom: 32px;
