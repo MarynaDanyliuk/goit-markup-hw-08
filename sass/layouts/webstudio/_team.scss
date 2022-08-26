@@ -4,7 +4,7 @@
   align-items: center;
 
   &__card {
-    width: calc(100% - 30px);
+    width: 100%;
 
     background-color: var(--team-card-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -37,16 +37,6 @@
     text-align: center;
     margin-top: 10px;
   }
-
-  // @media screen and (max-width: 767px) {
-  //   &__thumb-mob {
-  //     display: block;
-  //   }
-  //   &__thumb-tab,
-  //   &__thumb-desk {
-  //     display: none;
-  //   }
-  // }
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
